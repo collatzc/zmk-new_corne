@@ -43,9 +43,9 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
-  - LGUI
+  - {t: LGUI, h: Symbol}
   - {t: '$$mdi:keyboard-space$$', h: Number}
-  - {t: '`', h: Symbol, s: '~'}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
@@ -141,9 +141,9 @@ layers:
   - '}'
   - '|'
   - '~'
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
