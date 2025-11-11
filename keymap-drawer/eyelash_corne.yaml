@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: Sym}
+  - $$mdi:apple-keyboard-option$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: Num}
   - {t: '`', s: '~'}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - {t: '[', s: '{'}
+  - {t: '[', h: Sym, s: '{'}
   - {t: ']', s: '}'}
   Num:
   - $$mdi:keyboard-esc$$
@@ -140,12 +140,12 @@ layers:
   - '{'
   - '}'
   - '|'
-  - {t: '~', type: held}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - '&studio_unlock'
