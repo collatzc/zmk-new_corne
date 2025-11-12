@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 30   // 10
 
 #include <input/processors.dtsi>
@@ -77,12 +77,12 @@
         };
 
         lower_layer {
-            display-name = "Num";
+            display-name = "Num & Move";
             bindings = <
-&kp ESC &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&kp ESC &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp DEL
 &trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
 &trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+                                         &trans        &trans        &trans                                                                          &trans           &kp LPAR         &RPAR
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -103,9 +103,9 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv SCRL_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv SCRL_LEFT  &mkp LCLK       &mmv SCRL_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv SCRL_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                        &trans       &trans     &trans                                                                   &trans       &trans     &trans
             >;
 
