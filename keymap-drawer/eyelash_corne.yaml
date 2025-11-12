@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-option$$
   - LGUI
-  - {t: '$$mdi:keyboard-space$$', h: Num}
+  - {t: '$$mdi:keyboard-space$$', h: Num & Move}
   - {t: '`', s: '~'}
   - {t: '$$mdi:keyboard-return$$', h: Fn}
   - {t: '[', h: Sym, s: '{'}
   - {t: ']', s: '}'}
-  Num:
+  Num & Move:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -95,9 +95,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - INS
-  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - (
+  - '&RPAR'
   Sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -154,7 +154,7 @@ layers:
   - F3
   - F4
   - F5
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mmv SCRL_UP'
   - F6
   - F7
   - F8
@@ -167,9 +167,9 @@ layers:
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
   - '&mkp MB4'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - '&mmv SCRL_LEFT'
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mmv SCRL_RIGHT'
   - $$mdi:progress-download$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -183,7 +183,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB5'
   - $$mdi:volume-off$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mmv SCRL_DOWN'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
